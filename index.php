@@ -107,42 +107,88 @@
 <?php
 
   
+if (isset($_POST['submit'])) {
+
+  $num1 = $_POST['num1'];
+  $num2 = $_POST['num2'];
+  $operation = $_POST['operation'];
+
+
+
+switch ($operation) {
+  case 'add':
+    $sum = $num1 + $num2;
+    echo "Addition of two number is : " .$sum;
+    break;
+
+  case 'sub':
+    $sum = $num1 - $num2;
+    echo "Subtraction of two number is : " .$sum;
+    break;
+
+  case 'mul':
+    $sum = $num1 * $num2;
+    echo "Multiplication of two number is : " .$sum;
+    break;
+
+  case 'div':
+    $sum = $num1 / $num2;
+    echo "Division of two number is : " .$sum;
+    break;
    
-   if (isset($_POST['submit'])) {
-
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $operation = $_POST['operation'];
-
-  switch ($operation) {
-    case 'add':
-      $sum = $num1 + $num2;
-      echo 'Addition of two number is :' .$sum;
-      break;
-
-      case 'sub':
-        $sum = $num1 - $num2;
-        echo 'Subtraction of two number is : ' .$sum;
-        break;
-
-        case 'mul':
-          $sum = $num1 * $num2;
-          echo 'Multiplication of two number is : ' .$sum;
-        break;
-
-        case 'div':
-          $sum = $num1 / $num2;
-          echo 'Division of two number is : ' .$sum;
-        break;
-    
-    default:
-      echo "There is a problem. Try again..!";
-      break;
-  }
-
+  
+  default:
+    echo 'Error';
+    break;
+}
 
 }
+
+
+
+
+
+
+
+   
+//    if (isset($_POST['submit'])) {
+
+//     $num1 = $_POST['num1'];
+//     $num2 = $_POST['num2'];
+//     $operation = $_POST['operation'];
+
+//   switch ($operation) {
+//     case 'add':
+//       $sum = $num1 + $num2;
+//       echo 'Addition of two number is :' .$sum;
+//       break;
+
+//       case 'sub':
+//         $sum = $num1 - $num2;
+//         echo 'Subtraction of two number is : ' .$sum;
+//         break;
+
+//         case 'mul':
+//           $sum = $num1 * $num2;
+//           echo 'Multiplication of two number is : ' .$sum;
+//         break;
+
+//         case 'div':
+//           $sum = $num1 / $num2;
+//           echo 'Division of two number is : ' .$sum;
+//         break;
+    
+//     default:
+//       echo "There is a problem. Try again..!";
+//       break;
+//   }
+
+
+// }
   
+
+
+
 
 ?>
 
