@@ -47,6 +47,7 @@
             background-color: #cccfce;
             color:gray;
             font-weight:bold;
+            text-align:center;
             
         }
 
@@ -116,22 +117,22 @@
   switch ($operation) {
     case 'add':
       $sum = $num1 + $num2;
-      echo 'Addition of two number is :'.$sum;
+      echo 'Addition of two number is :' .$sum;
       break;
 
       case 'sub':
         $sum = $num1 - $num2;
-        echo 'Subtraction of two number is : '.$sum;
+        echo 'Subtraction of two number is : ' .$sum;
         break;
 
         case 'mul':
           $sum = $num1 * $num2;
-          echo 'Multiplication of two number is : '.$sum;
+          echo 'Multiplication of two number is : ' .$sum;
         break;
 
         case 'div':
           $sum = $num1 / $num2;
-          echo 'Multiplication of two number is : '.$sum;
+          echo 'Division of two number is : ' .$sum;
         break;
     
     default:
