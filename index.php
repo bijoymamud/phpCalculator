@@ -18,8 +18,9 @@
       }
 
       .bottom{
-        text-align: center;
+        text-align: right;
         color: white;
+        padding: 0 20px;
       }
         .calculator {
            
@@ -42,6 +43,11 @@
         input, select, button {
             margin: 10px;
             padding: 5px;
+            border-radius: 5px;
+            background-color: #cccfce;
+            color:gray;
+            font-weight:bold;
+            
         }
 
         .button {
